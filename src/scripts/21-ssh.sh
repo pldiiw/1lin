@@ -2,7 +2,7 @@ rc-update add sshd default
 
 sed -i -E 's:^(#)?(PermitRootLogin)(.)*$:PermitRootLogin no:' \
   /etc/ssh/sshd_config
-cat >> /etc/ssh/ssh_config <<EOF
+cat >> /etc/ssh/sshd_config << "EOF"
 Match User supinfo
   PasswordAuthentication no
 EOF

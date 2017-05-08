@@ -1,4 +1,4 @@
-cat > /etc/conf.d/hostname <<EOF
+cat > /etc/conf.d/hostname << "EOF"
 hostname="1lin"
 dns_domain_lo="home"
 EOF

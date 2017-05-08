@@ -1,5 +1,5 @@
-emerge-webrsync
-eselect profile set 11
-emerge --update --deep --newuse @world
+emerge-webrsync || true
+emerge --sync --quiet
+emerge --update --deep --newuse --quiet @world
 
 # Configure USE flag

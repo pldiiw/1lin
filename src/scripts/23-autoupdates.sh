@@ -1,4 +1,4 @@
-cat > /usr/bin/autoupdates <<EOF
+cat > /usr/bin/autoupdates << "EOF"
   #!/usr/bin/env bash
 
   mkdir -p /var/log/autoupdates
@@ -11,7 +11,7 @@ cat > /usr/bin/autoupdates <<EOF
   # emerge --depclean
 EOF
 chmod 755 /usr/bin/autoupdates
-cat > /usr/bin/autoupdates-flush-logs <<EOF
+cat > /usr/bin/autoupdates-flush-logs << "EOF"
   #!/usr/bin/env bash
 
   rm -f /var/log/autoupdates/*
