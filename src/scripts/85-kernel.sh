@@ -11,6 +11,7 @@ cp .config /boot/config-gentoo-1lin
 cd /
 
 # Cleanup
-emerge --unmerge sys-kernel/gentoo-sources
+emerge --quiet --unmerge --depclean --rage-clean sys-kernel/gentoo-sources
+rm -rf /usr/src/linux*
 
 # Note: Doc is not installed
