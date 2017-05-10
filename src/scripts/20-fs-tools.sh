@@ -1,2 +1,1 @@
-emerge sys-fs/e2fsprogs
-emerge sys-fs/dosfstools
+emerge --quiet sys-fs/e2fsprogs

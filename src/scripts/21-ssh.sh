@@ -9,3 +9,4 @@ EOF
 
 mkdir -p /home/supinfo/.ssh
 echo "$PUBKEY" > /home/supinfo/.ssh/authorized_keys
+chmod 600 /home/supinfo/.ssh/authorized_keys

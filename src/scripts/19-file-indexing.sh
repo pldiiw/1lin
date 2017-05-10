@@ -1,1 +1,0 @@
-emerge sys-apps/mlocate

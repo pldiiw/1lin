@@ -4,6 +4,7 @@ parted -a opt /dev/sda mkpart primary 0% 4MiB
 parted -a opt /dev/sda mkpart primary ext2 4MiB 132MiB
 parted -a opt /dev/sda mkpart primary ext4 132MiB 100%
 
+parted -a opt /dev/sda set 1 bios_grub on
 parted -a opt /dev/sda set 2 boot on
 
 # Create filesystems on partitions
