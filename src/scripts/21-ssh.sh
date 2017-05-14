@@ -1,6 +1,7 @@
 rc-update add sshd default
 
-sed -i -E 's:^(#)?(PermitRootLogin)(.)*$:PermitRootLogin no:' \
+sed -i -E 's:^(#)?(PermitRootLogin)(.)*$:PermitRootLogin no:' -E \
+  's:^(#)?(ChallengeResponseAuthentication)(.)*$:ChallengeResponseAuthentication no:' \
   /etc/ssh/sshd_config
 cat >> /etc/ssh/sshd_config << "EOF"
 Match User supinfo

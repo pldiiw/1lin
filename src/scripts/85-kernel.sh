@@ -9,9 +9,3 @@ cp System.map /boot/System.map-gentoo-1lin
 cp .config /boot/config-gentoo-1lin
 
 cd /
-
-# Cleanup
-emerge --quiet --unmerge --depclean --rage-clean sys-kernel/gentoo-sources
-rm -rf /usr/src/linux*
-
-# Note: Doc is not installed
